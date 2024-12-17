@@ -1,0 +1,17 @@
+[
+    {
+        "icon": "MdPlace",
+        "title":"Find us",
+        "details":"Delhi, India"
+    },
+    {
+        "icon": "IoCallSharp",
+        "title":"Call us",
+        "details":"9582139332"
+    },
+    {
+        "icon": "TbMailPlus",
+        "title":"Mail us",
+        "details":"fslazim@gmail.com"
+    }
+]

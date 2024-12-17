@@ -1,0 +1,53 @@
+
+
+[
+  {
+    "id": 1,
+    "countryName": "Japan",
+    "capital": "Tokyo",
+    "population": 125.8,
+    "interestingFact": "Japan has more than 6,800 islands."
+  },
+  {
+    "id": 2,
+    "countryName": "Canada",
+    "capital": "Ottawa",
+    "population": 38.3,
+    "interestingFact": "Canada has the longest coastline of any country in the world."
+  },
+  {
+    "id": 3,
+    "countryName": "Brazil",
+    "capital": "Brasíl",
+    "population": 214.3,
+    "interestingFact": "Brazil is home to the Amazon Rainforest, the largest rainforest in the world."
+  },
+  {
+    "id": 4,
+    "countryName": "Australia",
+    "capital": "Canberra",
+    "population": 25.7,
+    "interestingFact": "Australia is the only country that is also a continent."
+  },
+  {
+    "id": 5,
+    "countryName": "India",
+    "capital": "New Delhi",
+    "population": 1400,
+    "interestingFact": "India is the world's largest democracy."
+  },
+  {
+    "id": 6,
+    "countryName": "Germany",
+    "capital": "Berlin",
+    "population": 83.2,
+    "interestingFact": "Germany is known for its famous Oktoberfest beer festival."
+  },
+  {
+    "id": 7,
+    "countryName": "South Africa",
+    "capital": "Pretoria",
+    "population": 60.1,
+    "interestingFact": "South Africa has three capital cities: Pretoria, Bloemfontein, and Cape Town."
+  }
+]

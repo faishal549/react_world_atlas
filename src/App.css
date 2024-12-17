@@ -1,0 +1,494 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+h1,h2,h3,p{
+  color:white;
+}
+body{
+  background-color: #1b1818;
+}
+
+header{
+  height:7rem;
+  width:100%;
+  box-shadow: rgba(33,35,38,0.1) 0px 10px 10px -10px;
+  background-color: #202020;
+
+  & .container{
+    height:7rem;
+
+  }
+}
+
+.container{
+  max-width:70rem;
+  margin:auto;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.navbar-grid{
+  grid-template-columns: 0.5fr 1fr;
+  align-items:center;
+  height:7rem;
+  padding: 0 3.2rem;
+}
+
+nav ul {
+  display:flex;
+  justify-content: flex-end;
+  gap:3.2rem;
+  color :white;
+  list-style-type:none;
+
+
+  & li a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.hero-section{
+  padding: 2.2rem;
+  margin:1rem auto;
+  gap: 6.4rem;
+
+}
+.paragraph{
+  margin: 2.2rem 0;
+}
+
+.heading-xl{
+  font-family: inherit;
+  font-size: clamp(4.8rem, 6vw , 4.241rem);
+  font-weight:700;
+  line-height: 1;
+  letter-spacing: -1px;
+  
+}
+
+.hero-img{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner{
+  width:100%;
+  height:25rem;
+  /* box-shadow: rgb(108, 98, 99) 0px 1px 3px, rgba(84, 77, 77, 0.24) 0px 1px 2px; */
+}
+
+@media screen and (max-width:990px){
+  .banner{
+    flex-direction: column;
+  }
+  .hero-section{
+    order:1;
+
+
+  }
+  .container .banner-image{
+    width:80%;
+  }
+}
+
+.btn{
+  width:10.5rem;
+  height:2rem;
+  background: linear-gradient(71deg , #080509, #1a171c,#080509);
+  border:0.2px solid rgb(255, 252, 252);
+  border-radius:8px;
+  color:white;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  letter-spacing: 3px;
+  font-weight: bold;
+
+
+}
+
+
+/* about page  ki  styling  */
+
+.container-title{
+  text-align:center;
+  padding:2rem;
+
+}
+
+.section-about{
+  margin:0 auto 9rem auto;
+}
+
+.gradient-card{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:3.2rem;
+}
+
+.card{
+  max-width:45rem;
+  border:0;
+  width:100%;
+  margin-inline:0;
+}
+
+.container-card{
+  position:relative;
+  border:2px solid transparent;
+  background: linear-gradient(71deg , #050506, #1a171c,#080509);
+  background-clip: padding-box;
+  border-radius: 45px;
+  padding:40px;
+}
+
+@media screen and (max-width: 991px){
+  .gradient-card{
+    grid-template-columns: 1fr;
+  }
+}
+/* contact part  */
+
+.container h2{
+  text-align: center;
+  margin-top:0.5rem;
+  padding:2rem;
+  font-size:30px;
+  font-weight: bold;
+}
+
+form{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:1.5rem;
+  width:100%;
+  max-width: 70rem;
+  margin-top:1rem;
+
+  & input,
+  & textarea {
+    font-family: "urbanist";
+    background-color: #000;
+    font-size:1.2rem;
+    color:#fff;
+    outline:none;
+    border:0.1rem solid rgba(125, 224, 206, 0.695);
+    padding: 1.2rem 1.6rem;
+    border-radius:1.2rem;
+  }
+}
+
+/* footer section starts here  */
+
+.footer-section{
+  width:100%;
+  margin-top:2rem;
+ 
+
+}
+
+.grid-three-cols{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  background-color: #000;
+}
+
+.footer-contact{
+ 
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.footer-icon{
+  color:blue;
+  padding:0.3rem;
+  font-size: 28px;
+}
+
+.footer-content{
+  text-align: center;
+}
+
+
+.grid-two-cols{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.copyright-text{
+  font-family: "urbanist";
+  margin:auto 0;
+  & p{
+    text-align:center;
+
+  }
+}
+
+.footer-menu ul{
+  display:flex;
+  justify-content: flex-end;
+  gap:2rem;
+  padding:0.8rem;
+  list-style: none;
+  & li a{
+    text-decoration: none;
+    color:white;
+  }
+}
+
+
+/* loader spinner css */
+
+/* HTML: <div class="loader"></div> */
+.loader-frame{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  display: grid;
+  border-radius: 50%;
+  background:
+    linear-gradient(0deg ,rgb(0 0 0/50%) 30%,#0000 0 70%,rgb(0 0 0/100%) 0) 50%/8% 100%,
+    linear-gradient(90deg,rgb(0 0 0/25%) 30%,#0000 0 70%,rgb(0 0 0/75% ) 0) 50%/100% 8%;
+  background-repeat: no-repeat;
+  animation: l23 1s infinite steps(12);
+}
+.loader::before,
+.loader::after {
+   content: "";
+   grid-area: 1/1;
+   border-radius: 50%;
+   background: inherit;
+   opacity: 0.915;
+   transform: rotate(30deg);
+}
+.loader::after {
+   opacity: 0.83;
+   transform: rotate(60deg);
+}
+@keyframes l23 {
+  100% {transform: rotate(1turn)}
+}
+
+/* 
+country card css */
+
+.grid-four-cols{
+  grid-template-columns: repeat(4,1fr);
+}
+
+.country-card{
+  margin-top:3.2rem;
+}
+
+.country-section{
+  margin:6.4rem auto 9.6rem auto;
+  & .grid {
+    gap:3.2rem;
+    max-width:132rem;
+    margin:auto;
+  }
+  & img{
+      width:100%;
+      max-width:50rem;
+      height:12rem;
+  }
+}
+
+/* individual card container */
+ul li{
+  list-style-type: none;
+}
+.country-details-card{
+
+  max-width:100%;
+  /* margin:2.4rem auto; */
+  /* box-shadow: rgba(168,163,184,0.15) 0px 48px 100px 0px; */
+  & .container-card{
+    .grid{
+      align-items:center;
+    }
+   & img{
+        width:100%;
+        max-width:30rem;
+        margin-bottom:0;
+        height:10rem;
+        justify-content: center;
+        align-items: center;
+        /* box-shadow:rgba(255,255,255,0.1) 0px 48px 100px 0px; */
+   }
+  }
+  & .countryInfo{
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+  }
+  & .content{
+    margin-top:2rem;
+  }
+}
+.card-title{
+  font-weight: 500;
+  color:white;
+  letter-spacing: 0.1rem;
+  line-height: 40px;
+  font-size:18px;
+  text-transform: uppercase;
+}
+
+.container-card .btn{
+  margin-top:1rem;
+  }
+
+ a{
+  text-decoration: none;
+}
+
+
+
+/* body{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+.footer-section{
+  margin-top:auto;
+} */
+
+/* Searchfilter  section css */
+
+.search-section{
+  display:flex;
+  width:100%;
+  flex-direction: row;
+  justify-content: space-around;
+
+ 
+ }
+ .input-search input{
+   font-family: "urbanist";
+   background-color: #000;
+   font-size:1.2rem;
+   color:#fff;
+   outline:none;
+   border:0.1rem solid rgba(125, 224, 206, 0.695);
+   padding: 0.2rem 0.9rem;
+   border-radius:1.2rem;
+ }
+ 
+ .marker{
+ 
+   width:5.5rem;
+   height:1.5rem;
+   /* background: linear-gradient(71deg , #080509, #1a171c,#080509); */
+   background-color: #000;
+   border:0.1rem solid rgba(125, 224, 206, 0.695);
+   border-radius:8px;
+   color:white;
+   display:flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   letter-spacing: 3px;
+   font-weight: bold;
+ }
+ 
+ .dropdown .marker{
+   width:7rem;
+ }
+ @media screen and (max-width: 1320px){
+  .search-section{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    gap:1.2rem;
+  }
+}
+
+
+@media screen and (max-width: 1320px){
+  .grid-four-cols{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+@media screen and (max-width: 980px){
+  .grid-four-cols{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media screen and (max-width: 1320px){
+  .grid-four-cols,
+  .grid-three-cols,
+  .grid-two-cols{
+    grid-template-columns: 1fr;
+  }
+  .grid--cols{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/* ham menu css */
+
+.ham-menu{
+  display:none;
+}
+
+/* media-query */
+@media screen and (max-width:998px){
+  .menu-web{
+    display:none;
+  }
+  .ham-menu{
+    display:flex;
+    justify-content: flex-end;
+  }
+  .menu-mobile{
+    position:absolute;
+    top:7rem;
+    left:0;
+    background-color: rgb(11, 11, 11);
+    width:100%;
+    box-shadow: rgba(0,0,0,0.25)0px 14px 28px;
+  }
+  .menu-mobile ul{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    & li:first-child{
+      margin-top: 1.2rem;
+    }
+    & li:last-child{
+      margin-bottom: 1.2rem;
+    }
+  }
+}
